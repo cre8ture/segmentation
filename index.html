@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transformers.js - Object Detection demo</title>
+    <script src="create_table.js"></script>
+    <script src="apply_mask.js"></script>
+
+
+</head>
+
+<body>
+    <main class="container">
+        <label class="custom-file-upload">
+            <input id="file-upload" type="file" accept="image/*" />
+            <img class="upload-icon" src="https://huggingface.co/datasets/Xenova/transformers.js-docs/resolve/main/upload-icon.png" />
+            Upload image
+        </label>
+        <div id="image-container"></div>
+        <p id="status"></p>
+
+        <div id="segmentation-container" style="display: none;">
+            <button id="segmentation-button">Segment this image?</button>
+            <div id="segmentation"></div>
+            <div id="table"></div>
+            <div id="canvas-holder"></div>
+    </main>
+    <!-- <script src="index.js" type="module"></script> -->
+    <script src="main.js" type="module"></script>
+
+</body>
+
+</html>
